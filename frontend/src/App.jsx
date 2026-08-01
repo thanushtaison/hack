@@ -50,7 +50,7 @@ function App() {
     setLoading(true);
     const dataToSend = customFormData || formData;
     try {
-      const response = await fetch('http://localhost:8000/api/predict-yield', {
+      const response = await fetch('https://hack-2-k44h.onrender.com/api/predict-yield', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dataToSend),
